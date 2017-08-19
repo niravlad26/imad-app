@@ -6,9 +6,9 @@ var app = express();
 
 var articles = {
                         'articleOne': {
-                        title: "Article One : by Nirav Lad",
-                        heading: "Article Pehla",
-                        date: "20-08-2017",
+                        title: 'Article One : by Nirav Lad',
+                        heading: 'Article Pehla',
+                        date: '20-08-2017',
                         content:`<p>
                                     This is the content of my first article. This is the content of my first article. This is the content of my first article. This is the content of my first article. This is the content of my first article. This is the content of my first article. This is the content of my first article.
                                 </p>
@@ -20,9 +20,9 @@ var articles = {
                                 </p>`
                         },
                         'articleTwo': {
-                        title: "Article Two : by Nirav Lad",
-                        heading: "Article Dusra",
-                        date: "28-08-2017",
+                        title: 'Article Two : by Nirav Lad',
+                        heading: 'Article Dusra',
+                        date: '28-08-2017',
                         content:`<p>
                                     This is the content of my second article. This is the content of my first article. This is the content of my first article. This is the content of my first article. This is the content of my first article. This is the content of my first article. This is the content of my first article.
                                 </p>
@@ -34,9 +34,9 @@ var articles = {
                                 </p>`
                         },
                         'articleThree': {
-                        title: "Article Three : by Nirav Lad",
-                        heading: "Article Teesra",
-                        date: "28-08-2017",
+                        title: 'Article Three : by Nirav Lad',
+                        heading: 'Article Teesra',
+                        date: '28-08-2017',
                         content:`<p>
                                     This is the content of my third article. This is the content of my first article. This is the content of my first article. This is the content of my first article. This is the content of my first article. This is the content of my first article. This is the content of my first article.
                                 </p>
