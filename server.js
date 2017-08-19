@@ -4,8 +4,8 @@ var path = require('path');
 
 var app = express();
 
-var articleName = {
-                        articleOne: {
+var articles = {
+                        'articleOne': {
                         Title: "Article One : by Nirav Lad",
                         Heading: "Article Pehla",
                         Date: "20-08-2017",
@@ -19,7 +19,7 @@ var articleName = {
                                     This is the content of my first article. This is the content of my first article. This is the content of my first article. This is the content of my first article. This is the content of my first article. This is the content of my first article. This is the content of my first article.
                                 </p>`
                         },
-                        articleTwo: {
+                        'articleTwo': {
                         Title: "Article Two : by Nirav Lad",
                         Heading: "Article Dusra",
                         Date: "28-08-2017",
@@ -33,7 +33,7 @@ var articleName = {
                                     This is the content of my second article. This is the content of my first article. This is the content of my first article. This is the content of my first article. This is the content of my first article. This is the content of my first article. This is the content of my first article.
                                 </p>`
                         },
-                        articleThree: {
+                        'articleThree': {
                         Title: "Article Three : by Nirav Lad",
                         Heading: "Article Teesra",
                         Date: "28-08-2017",
@@ -87,7 +87,7 @@ app.get('/', function (req, res) {
 
 app.get('/:articleName', function (req, res){
     var articleName = req.params.articleName;
-    res.send(createTemplate(articleName[articleName]));
+    res.send(createTemplate(articles[articleName]));
 });
 
 app.get('/ui/style.css', function (req, res) {
