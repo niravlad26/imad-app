@@ -3,7 +3,7 @@ console.log('Loaded!');
 var element = document.getElementById('main-text'
 );
 
-element.innerHTML = "Ha Ha Ha";
+element.innerHTML = "Hover over the image to zoom";
 
 var img = document.getElementById('madi');
 img.onmouseover = function() { 
