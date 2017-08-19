@@ -70,10 +70,10 @@ var htmlTemplate =
                 <div>
                 ${date}   
                 </div>
-                <div class = "container">
-                <div>
-                ${content}    
-                </div>
+                <div class="container">
+                    <div>
+                    ${content}    
+                    </div>
                 </div>
             </Body>
             </html>`;
