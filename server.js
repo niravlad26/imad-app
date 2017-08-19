@@ -4,6 +4,51 @@ var path = require('path');
 
 var app = express();
 
+var articleName = {
+                        articleOne: {
+                        Title: "Article One : by Nirav Lad",
+                        Heading: "Article Pehla",
+                        Date: "20-08-2017",
+                        Content:`<p>
+                                    This is the content of my first article. This is the content of my first article. This is the content of my first article. This is the content of my first article. This is the content of my first article. This is the content of my first article. This is the content of my first article.
+                                </p>
+                                <p>
+                                    This is the content of my first article. This is the content of my first article. This is the content of my first article. This is the content of my first article. This is the content of my first article. This is the content of my first article. This is the content of my first article.
+                                </p>
+                                <p>
+                                    This is the content of my first article. This is the content of my first article. This is the content of my first article. This is the content of my first article. This is the content of my first article. This is the content of my first article. This is the content of my first article.
+                                </p>`
+                        },
+                        articleTwo: {
+                        Title: "Article Two : by Nirav Lad",
+                        Heading: "Article Dusra",
+                        Date: "28-08-2017",
+                        Content:`<p>
+                                    This is the content of my second article. This is the content of my first article. This is the content of my first article. This is the content of my first article. This is the content of my first article. This is the content of my first article. This is the content of my first article.
+                                </p>
+                                <p>
+                                    This is the content of my second article. This is the content of my first article. This is the content of my first article. This is the content of my first article. This is the content of my first article. This is the content of my first article. This is the content of my first article.
+                                </p>
+                                <p>
+                                    This is the content of my second article. This is the content of my first article. This is the content of my first article. This is the content of my first article. This is the content of my first article. This is the content of my first article. This is the content of my first article.
+                                </p>`
+                        },
+                        articleThree: {
+                        Title: "Article Three : by Nirav Lad",
+                        Heading: "Article Teesra",
+                        Date: "28-08-2017",
+                        Content:`<p>
+                                    This is the content of my third article. This is the content of my first article. This is the content of my first article. This is the content of my first article. This is the content of my first article. This is the content of my first article. This is the content of my first article.
+                                </p>
+                                <p>
+                                    This is the content of my third article. This is the content of my first article. This is the content of my first article. This is the content of my first article. This is the content of my first article. This is the content of my first article. This is the content of my first article.
+                                </p>
+                                <p>
+                                    This is the content of my third article. This is the content of my first article. This is the content of my first article. This is the content of my first article. This is the content of my first article. This is the content of my first article. This is the content of my first article.
+                                </p>`
+                        },
+};
+
 var articleOne = {
     Title: "Article One : by Nirav Lad",
     Heading: "Article Pehla",
@@ -56,6 +101,11 @@ app.use(morgan('combined'));
 
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
+});
+
+app.get('/:articleName', function (req, res){
+    var articleName = req.params.articleName;
+    res.send(createTemplate(articles[articaleName]));
 });
 
 app.get('/article-one', function (req, res){
