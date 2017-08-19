@@ -56,6 +56,7 @@ var heading = data.heading;
 var content = data.content;
 var htmlTemplate = 
             `<html>
+            <link href="/ui/style.css" rel="stylesheet" />
             <title>
                 ${title}
             </title>
@@ -71,7 +72,6 @@ var htmlTemplate =
                 ${date}   
                 </div>
                 <div class="container">
-                <link href="/ui/style.css" rel="stylesheet" />
                     <div>
                     ${content}    
                     </div>
