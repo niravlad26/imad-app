@@ -71,6 +71,7 @@ var htmlTemplate =
                 ${date}   
                 </div>
                 <div class="container">
+                <link href="/ui/style.css" rel="stylesheet" />
                     <div>
                     ${content}    
                     </div>
