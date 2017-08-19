@@ -7,5 +7,5 @@ element.innerHTML = "Ha Ha Ha";
 
 var img = document.getElementById('madi');
 img.onclick = function() {
-    img.style.opacity = "40";
+    img.style.opacity = "90";
 };
