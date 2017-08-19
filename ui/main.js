@@ -10,5 +10,5 @@ img.onmouseover = function() {
     img.style.zoom = 1.5;
 };
 img.onmouseout = function() {
-    img.style.zoom = 0.667;
+    img.style.zoom = 1;
 };
