@@ -6,6 +6,6 @@ var element = document.getElementById('main-text'
 element.innerHTML = "Ha Ha Ha";
 
 var elementimage = document.getElementById('madi');
-madi.onclick = function() {
-    madi.style.opacity = "40";
+img.onclick = function() {
+    img.style.opacity = "40";
 };
