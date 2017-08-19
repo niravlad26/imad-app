@@ -6,10 +6,10 @@ var app = express();
 
 var articles = {
                         'articleOne': {
-                        Title: "Article One : by Nirav Lad",
-                        Heading: "Article Pehla",
-                        Date: "20-08-2017",
-                        Content:`<p>
+                        title: "Article One : by Nirav Lad",
+                        heading: "Article Pehla",
+                        date: "20-08-2017",
+                        content:`<p>
                                     This is the content of my first article. This is the content of my first article. This is the content of my first article. This is the content of my first article. This is the content of my first article. This is the content of my first article. This is the content of my first article.
                                 </p>
                                 <p>
@@ -20,10 +20,10 @@ var articles = {
                                 </p>`
                         },
                         'articleTwo': {
-                        Title: "Article Two : by Nirav Lad",
-                        Heading: "Article Dusra",
-                        Date: "28-08-2017",
-                        Content:`<p>
+                        title: "Article Two : by Nirav Lad",
+                        heading: "Article Dusra",
+                        date: "28-08-2017",
+                        content:`<p>
                                     This is the content of my second article. This is the content of my first article. This is the content of my first article. This is the content of my first article. This is the content of my first article. This is the content of my first article. This is the content of my first article.
                                 </p>
                                 <p>
@@ -34,10 +34,10 @@ var articles = {
                                 </p>`
                         },
                         'articleThree': {
-                        Title: "Article Three : by Nirav Lad",
-                        Heading: "Article Teesra",
-                        Date: "28-08-2017",
-                        Content:`<p>
+                        title: "Article Three : by Nirav Lad",
+                        heading: "Article Teesra",
+                        date: "28-08-2017",
+                        content:`<p>
                                     This is the content of my third article. This is the content of my first article. This is the content of my first article. This is the content of my first article. This is the content of my first article. This is the content of my first article. This is the content of my first article.
                                 </p>
                                 <p>
@@ -50,10 +50,10 @@ var articles = {
 };
 
 function createTemplate(data){
-var Title = data.Title;
-var Date = data.Date;
-var Heading = data.Heading;
-var Content = data.Content;
+var Title = data.title;
+var Date = data.date;
+var Heading = data.heading;
+var Content = data.content;
 var htmlTemplate = 
             `<html>
             <title>
