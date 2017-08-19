@@ -5,7 +5,7 @@ var path = require('path');
 var app = express();
 
 var articles = {
-                        'articleOne': {
+                        'article-one': {
                         title: 'Article One : by Nirav Lad',
                         heading: 'Article Pehla',
                         date: '20-08-2017',
@@ -19,7 +19,7 @@ var articles = {
                                     This is the content of my first article. This is the content of my first article. This is the content of my first article. This is the content of my first article. This is the content of my first article. This is the content of my first article. This is the content of my first article.
                                 </p>`
                         },
-                        'articleTwo': {
+                        'article-two': {
                         title: 'Article Two : by Nirav Lad',
                         heading: 'Article Dusra',
                         date: '28-08-2017',
@@ -33,7 +33,7 @@ var articles = {
                                     This is the content of my second article. This is the content of my first article. This is the content of my first article. This is the content of my first article. This is the content of my first article. This is the content of my first article. This is the content of my first article.
                                 </p>`
                         },
-                        'articleThree': {
+                        'article-three': {
                         title: 'Article Three : by Nirav Lad',
                         heading: 'Article Teesra',
                         date: '28-08-2017',
