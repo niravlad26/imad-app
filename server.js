@@ -57,10 +57,7 @@ var Content = data.Content;
 var htmlTemplate = 
             `<html>
             <title>
-                <Heading>
                 ${Title}
-               
-                </Heading>
             </title>
             <Body>
                 <div>
