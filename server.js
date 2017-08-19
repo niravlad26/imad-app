@@ -49,21 +49,6 @@ var articleName = {
                         },
 };
 
-var articleOne = {
-    Title: "Article One : by Nirav Lad",
-    Heading: "Article Pehla",
-    Date: "20-08-2017",
-    Content:`<p>
-                This is the content of my first article. This is the content of my first article. This is the content of my first article. This is the content of my first article. This is the content of my first article. This is the content of my first article. This is the content of my first article.
-            </p>
-            <p>
-                This is the content of my first article. This is the content of my first article. This is the content of my first article. This is the content of my first article. This is the content of my first article. This is the content of my first article. This is the content of my first article.
-            </p>
-            <p>
-                This is the content of my first article. This is the content of my first article. This is the content of my first article. This is the content of my first article. This is the content of my first article. This is the content of my first article. This is the content of my first article.
-            </p>`
-};
-
 function createTemplate(data){
 var Title = data.Title;
 var Date = data.Date;
@@ -106,18 +91,6 @@ app.get('/', function (req, res) {
 app.get('/:articleName', function (req, res){
     var articleName = req.params.articleName;
     res.send(createTemplate(articleName[articleName]));
-});
-
-app.get('/article-one', function (req, res){
-    res.send(createTemplate(articleOne));
-});
-
-app.get('/article-two', function (req, res){
-    res.sendFile(path.join(__dirname, 'ui', 'article-two.html'));
-});
-
-app.get('/article-three', function (req, res){
-    res.sendFile(path.join(__dirname, 'ui', 'article-three.html'));
 });
 
 app.get('/ui/style.css', function (req, res) {
